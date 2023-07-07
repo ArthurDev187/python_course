@@ -11,14 +11,20 @@
 # print(int_um, type(int_um))
 # print(nome_completo, soma_dois_mais_dois)
 
-"""
-nome = 'Luiz'
-idade = 17
-maior_de_idade = idade >= 18
-print('Nome:', nome, 'Idade:', idade)
-print('É maior?', maior_de_idade)
-"""
 
-nome_completo = "Arthur Rodrigues Da Silva"
-soma_dois_mais_dois = 2 + 2
-print(nome_completo, soma_dois_mais_dois)
+# nome = 'Luiz'
+# idade = 17
+# maior_de_idade = idade >= 18
+# print('Nome:', nome, 'Idade:', idade)
+# print('É maior?', maior_de_idade)
+
+
+# nome_completo = "Arthur Rodrigues Da Silva"
+# soma_dois_mais_dois = 2 + 2
+# print(nome_completo, soma_dois_mais_dois)
+
+nome = 'Arthur'
+idade = 28
+maior_idade = idade >= 18
+print(f'Nome: {nome} idade: {idade}')
+print(f'É maior de idade? {maior_idade}')
