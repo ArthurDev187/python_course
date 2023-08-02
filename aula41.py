@@ -17,14 +17,15 @@ while True:
     if valida_num == False:
         print('Um ou ambos os número não são válidos e não foi possível fazer o cálculo.')
         continue
-        
+    if len(operador) > 1:
+        print('Digite apenas um operador.')
+        continue
+    
     if operador not in operador_valido:
         print('Você não digitou um operador válido.')
         continue
     
-    if len(operador) > 1:
-        print('Digite apenas um operador.')
-        continue
+    
     
     if operador == '+':
         print(f'{num1}+{num2}= {num1+num2}')
@@ -36,4 +37,13 @@ while True:
         print(f'{num1}/{num2}= {num1/num2}')
     else:
         print('O programa não deveria chegar aqui.')
-        
+
+    
+    opcao_usuario = input('Deseja continuar? (S/N)').strip().upper()
+    
+    if opcao_usuario[0] == 'S':
+        continue
+    else:
+        break
+
+print('Saiu da calculadora.')
