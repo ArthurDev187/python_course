@@ -23,7 +23,8 @@ while True:
     
 
 
-    lista_palavras = ['BORBOLETA', 'MANGA', 'CHICLETE', 'AMEIXA', 'TELEVISAO', 'ARMARIO', 'ARVORE', 'ESQUINA', 'PARALELEPIPEDO', 'PASSARO']
+    lista_palavras = ['BORBOLETA', 'MANGA', 'CHICLETE', 'AMEIXA', 'TELEVISAO', 'ARMARIO', 'ARVORE', 'ESQUINA', 'PARALELEPIPEDO', 'PASSARO', 
+                      'MARINHEIRO', 'MUQUIRANA', 'PAMONHA', 'CARNE', 'BANHEIRO']
 
     palavra = random.choice(lista_palavras)
     palavra_secreta = []
