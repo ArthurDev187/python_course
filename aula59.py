@@ -38,3 +38,5 @@ while True:
     elif opcao == 'l':
         for indice, item in enumerate(lista):
             print(indice, item)
+ 
+ 
