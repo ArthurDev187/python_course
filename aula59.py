@@ -12,7 +12,7 @@ print('LISTA DE COMPRAS')
 print()
 while True:
     
-    opcao = input('\nVocê quer (i)nserir, (a)pagar ou (l)istar? ').strip().lower().capitalize()
+    opcao = input('\nVocê quer (i)nserir, (a)pagar ou (l)istar? ').strip().lower()
     print()
     if len(opcao) > 1:
         print('Digite apenas uma letra para a opcao.')
