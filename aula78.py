@@ -3,8 +3,7 @@
 def par_impar(num):
     if num % 2 == 0:
         return 'O número é par'
-    else:
-        return 'O número é impar'
+    return 'O número é impar'
     
 e_impar_ou_par = par_impar(64533)
 
