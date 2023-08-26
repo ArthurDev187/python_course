@@ -20,7 +20,7 @@ perguntas_respostas = [
         'resposta' : '1957'
     },
     {
-        'pergunta' : 'Qual foi o presidente americano que ordenou a explosão das bombas iroxima e nagasaqui?',
+        'pergunta' : 'Qual foi o presidente americano que ordenou a explosão das bombas hiroshima e nagasaki?',
         'opções' : ['George W. Bush', 'Harry Truman', 'Richard Nixon', 'Ronald Reagan'] ,
         'resposta' : 'Harry Truman'
     },
