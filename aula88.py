@@ -16,7 +16,7 @@ perguntas_respostas = [
     },
     {
         'pergunta' : 'Quando foi lançado o primeiro satélite no espaço? ',
-        'opções' : ['1957', '1955', '1960', '1962'] ,
+        'opções' : ['1957', '1955', '1960', '1962'] , 
         'resposta' : '1957'
     },
     {
