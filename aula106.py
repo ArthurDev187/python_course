@@ -1,4 +1,4 @@
-# Genarator expression, Iteraveis e iterator em Python
+# Iteraveis e iterator em Python
 
 iteravel = ['Eu', 'tenho', 'um', 'Iterator'] 
 iterator = iter(iteravel) 
