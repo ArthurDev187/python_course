@@ -19,5 +19,5 @@ def gen3():
     
 generator = gen2(gen1, gen3)
 for i in generator:
-    print(i) 
+    print(i)
     
