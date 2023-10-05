@@ -10,7 +10,7 @@
 # [('Salvador', 'BA'), ('Ubatuba', 'SP'), ('Belo Horizonte', 'MG')]
 
 
-def ziper(lista1):
+def zipper(lista1):
     def inner(lista2):
         res = []
         cont = 0
@@ -25,6 +25,6 @@ def ziper(lista1):
 l1 = ['Salvador', 'Ubatuba', 'Belo Horizonte']
 l2 = ['BA', 'SP', 'MG', 'RJ']
 
-func_lista = ziper(l1)
+func_lista = zipper(l1)
 nova_lista = func_lista(l2)
 print(nova_lista)
