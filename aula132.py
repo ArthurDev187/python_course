@@ -1,4 +1,3 @@
-@@ -0,0 +1,21 @@
 # count é um iterador sem fim (itertools)
 from itertools import count
 
