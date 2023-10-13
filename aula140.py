@@ -36,6 +36,9 @@ with open(caminho_arquivo, 'a') as arquivo:
     
 print('*' * 15)
 with open(caminho_arquivo, 'r') as arquivo:
-    arquivo.seek(0, 0)
     print(arquivo.read()) 
-    
+
+print('*' * 15)
+with open(caminho_arquivo, 'r') as arquivo:
+    for linha in arquivo.readlines():
+        print(linha.strip())
