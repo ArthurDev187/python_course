@@ -20,7 +20,8 @@
 # json.load
 caminho_arquivo = 'aula140'
     
-with open(caminho_arquivo, 'w+') as arquivo:
+with open(caminho_arquivo, 'w+', encoding='utf8') as arquivo:
+    arquivo.write('Atenção\n')
     arquivo.write('Linha 1\n') 
     arquivo.write('Linha 2\n')
     arquivo.writelines(
@@ -29,16 +30,16 @@ with open(caminho_arquivo, 'w+') as arquivo:
     arquivo.seek(0, 0)
     print(arquivo.read())
 
-with open(caminho_arquivo, 'a') as arquivo:
+with open(caminho_arquivo, 'a', encoding='utf8') as arquivo:
     arquivo.writelines(
         ('Linha 5\n', 'Linha 6\n', 'Linha 7\n')
     )
     
 print('*' * 15)
-with open(caminho_arquivo, 'r') as arquivo:
+with open(caminho_arquivo, 'r', encoding='utf8') as arquivo:
     print(arquivo.read()) 
 
 print('*' * 15)
-with open(caminho_arquivo, 'r') as arquivo:
+with open(caminho_arquivo, 'r', encoding='utf8') as arquivo:
     for linha in arquivo.readlines():
         print(linha.strip())
