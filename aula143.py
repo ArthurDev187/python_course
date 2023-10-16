@@ -8,11 +8,13 @@
 # desfazer = [] -> Refazer ['caminhar', 'fazer café']
 # refazer = todo ['fazer café']
 # refazer = todo ['fazer café', 'caminhar']
+#Agora vou fazer um exercício com esse código que é salvar a listar de tarefas em formator json
+import json
 import os
 
 lista_tarefas = [] 
 
-opcoes = 'listar desfazer refazer clear'
+opcoes = 'listar desfazer refazer clear salvar'
 desfazendo = ''
 refazendo = ''
 lista_desfeita = []
@@ -57,8 +59,18 @@ while True:
         
         elif opcao_usuario == 'clear':
             os.system('clear')
+        
+        elif opcao_usuario == 'salvar':
+            print('Por favor, digite o nome do arquivo ou o caminho para que sua lista de tarefas possa ser salva.')
+            nome_caminho = input('Digite aqui: ')
+            with open(nome_caminho+'.json', 'w', encoding='utf8') as arquivo:
+                json.dump(
+                    lista_tarefas,
+                    arquivo,
+                    ensure_ascii=False,
+                    indent=2
+                )
             
         continue
-        
             
     lista_tarefas.append(opcao_usuario)
