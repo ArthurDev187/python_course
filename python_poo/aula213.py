@@ -10,30 +10,35 @@
 # (existem controvérsias sobre as definições de agregação).
 class Carrinho:
     def __init__(self):
-        self._produtos = [] 
+        self.produtos = [] 
+        
     
     def total(self):
-        return sum([p.preco for p in self._produtos])
+        return sum([p.preco for p in self.produtos])
     
-    def inserir_produtos(self, *produtos):
-        for produto in produtos:
-            self._produtos.append(produto)
-            
     def listar_produtos(self):
-        for p in self._produtos:
-            print(p.nome, p.preco)
+        print()
+        print('=======Lista de produtos======')
+        for produto in self.produtos:
+            print(produto.nome, produto.preco)
+        print()
+    
+    def adicionar_produtos(self, *produtos):
+        for p in produtos:
+            self.produtos.append(p)
             
 
-class Produtos:
+class Produto:
     def __init__(self, nome, preco):
         self.nome = nome
         self.preco = preco
-        
+    
+    
+carrinho = Carrinho() 
+p1, p2 = Produto('Caneta', 2.30), Produto('Caderno', 18.70)
+p3 = Produto('Borracha', 3.10)
 
-carrinho = Carrinho()
-p1, p2, p3 = Produtos('Macarrão', 4.90), Produtos('Chocolate', 8.20), Produtos('Sabonete', 5.00)
-carrinho.inserir_produtos(p1, p2, p3)
+carrinho.adicionar_produtos(p1, p2, p3) 
 carrinho.listar_produtos()
 total = carrinho.total()
-print()
 print(total)
